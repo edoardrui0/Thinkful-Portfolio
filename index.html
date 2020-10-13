@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- added the English language here -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eddie's Portfolio</title>
+    <link
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- importing a normalize css file to my site -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1>Edoardo Ruiz</h1>
+        <h3>Software Developer</h3>
+      </div>
+    </header>
+
+    <!-- This will be where all of the main information about me will be, which includes my photo, links to my works/github, and a bit of info on myself -->
+    <main>
+      <div class="wrapper">
+        <!-- Added three 'articles' here -->
+        <article class="first-impression">
+          <!-- My profile picture, including the 'alt' attribute i had forgotten the first time around -->
+          <img src="profile-pic.jpg" alt="My profile picture" />
+          <h2>Hi! I'm Eddie</h2>
+          <p>My name is Edoardo, but you can call me Eddie!</p>
+          <p>I'm an aspiring Web Developer currently living in Miami, FL.</p>
+          <p>As a self-taught dev, my skills are:</p>
+          <!-- an unordered listed of my current skills.  -->
+          <ul>
+            <li>The basic HTML, CSS and JS</li>
+            <li>Responsive Design</li>
+            <li>React.js</li>
+          </ul>
+          <p>
+            Please feel free to look around, and don't forget to
+            <a href="#contact">contact me!</a>
+          </p>
+        </article>
+
+        <hr />
+
+        <article class="aboutMe">
+          <h2>About Me</h2>
+          <!-- there's a link to one of my most recent projects, which opens to a new tab. I made it to help out my church. My project does use React, feel free to look at it, any criticism is welcomed  -->
+          <p>
+            I learned about web development through a good friend of mine and I
+            became instantly hooked. I always found it interesting, challenging
+            and rewarding. I actively try to learn new things and always
+            continue to challenge myself to be better. Feel free to take a look
+            at my most recent project
+            <a
+              href="https://github.com/edoardrui0/territory-manager"
+              target="_blank"
+              >here</a
+            >.
+          </p>
+          <p>
+            Besides coding, I enjoy making music, fishing, collecting sneakers,
+            and drifting cars. I feel my hobbies help me take inspriration from
+            the real world and put it into the tech world.
+          </p>
+          <p>
+            Teamwork is something that I highly value. Working with a team is
+            very rewarding, as you get to learn and rely on one another. Setting
+            a culture in the office has always been important, and that
+            definitely something I will bring to the table.
+          </p>
+          <p></p>
+        </article>
+
+        <hr />
+        <!-- Use an 'id' for contact to quickly link to it within the page, and reused that id for CSS instead of having to write a seperate class -->
+        <article id="contact">
+          <h2>Contact Me!</h2>
+          <p>
+            I'd love to hear from you! Please use the following links to contact
+            or follow me:
+          </p>
+          <!-- A list of my personal information, including my Github and LinkedIn -->
+          <ol class="contact-list">
+            <li><a href="https://github.com/edoardrui0">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <!-- In the process of making a LinkedIn -->
+          </ol>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <!-- Added the '&reg;' here to get that trademark symbol. -->
+        <span>Edoardo Ruiz &reg;</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <!-- gg Lakers. -->
+</html>
