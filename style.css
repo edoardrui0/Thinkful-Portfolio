@@ -6,12 +6,51 @@
 }
 
 body {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(238, 238, 238);
 }
 
-img {
-  width: 350px;
+header,
+footer {
+  background-color: #000;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header h3 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+
+.first-impression img {
+  width: 250px;
   border-radius: 50%;
+}
+
+#territory img {
+  width: 300px;
+  height: 300px;
 }
 
 hr {
@@ -20,42 +59,27 @@ hr {
   background-color: rgb(41, 41, 41);
 }
 
-/* I am well aware of nesting, but i prefer classes and IDs. */
-.header,
-.footer {
-  background-color: black;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 1.25rem;
-}
-
-.wrapper {
-  margin: 25px auto;
-  width: 550px;
-}
-
 /* I tend to just group up all of the classes, ids, and everything else that shares:  
   <display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;>
   i believe it's the right way to do it */
-header,
+
 .first-impression,
 .aboutMe,
-#contact,
-footer {
+#territory,
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* I cracked and used nesting here lol */
 main div article h2 {
   font-size: 2rem;
 }
+
 main div article p,
 main div article li,
 main div article a {
@@ -95,4 +119,49 @@ a:active {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
+}
+
+@media all and (min-width: 600px) {
+  .header,
+  .footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  
+  header h3 {
+    margin-top: 8px;
+    padding: 0;
+  }
+
+  main {
+    margin-top: 15px;
+  }
+
+  .wrapper {
+    margin: 25px auto;
+    width: 650px;
+  }
+
+  .first-impression img {
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  #territory img {
+    width: 550px;
+    height: 550px;
+  }
 }
