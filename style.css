@@ -108,6 +108,24 @@ a:active {
   padding: 20px;
 }
 
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form input {
+  width: 325px;
+}
+
+.contact-form form textarea {
+  height: 75px;
+}
+
+.contact-form form button {
+  width: 75px;
+  margin-top: 10px;
+}
+
 /* Fonts, from Google Fonts */
 @font-face {
   font-family: "Commissioner";
@@ -163,5 +181,26 @@ a:active {
   #territory img {
     width: 550px;
     height: 550px;
+  }
+
+  .contact-form form input, 
+  .contact-form form textarea, 
+  .contact-form form button {
+    border-radius: 4px;
+    border: solid black 1px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form form input {
+    width: 550px;
+  }
+  
+  .contact-form form textarea {
+    height: 75px;
+  }
+  
+  .contact-form form button {
+    width: 75px;
+    margin-top: 10px;
   }
 }
